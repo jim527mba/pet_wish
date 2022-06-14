@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-ent">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NARUTO style</title>
+    <!-- <link rel="stylesheet" href="style01.css"> -->
+</head>
+<style>
+    /* 手機版 */
+    .container {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    img {
+        width: 100%;
+    }
+
+    header {
+        height: 250px;
+        background-image: url("images/naruto.jpg");
+        background-size: 100%;
+    }
+
+    header>h1 {
+        color: rgb(253, 56, 171);
+        /* font-style:normal; */
+        font-size: 40px;
+        text-align: center;
+        line-height: 60px;
+        padding-top: 120px;
+        /* margin: 0px; */
+    }
+
+    nav {
+        height: 24px;
+        background-color: rgb(87, 26, 0);
+    }
+
+    .clearfix::after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+
+    /* .Left {
+width: 30%;
+float: left;
+}
+
+.Right {
+width: 70%;
+float: left;
+} */
+
+    nav>ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav>ul>li {
+        width: 25%;
+        border-right: 1px solid rgb(255, 255, 255);
+        border-left: 1px solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        float: left;
+    }
+
+    nav>ul>li>a {
+        color: rgb(255, 241, 85);
+        width: 100%;
+        line-height: 24px;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+
+    nav>ul>li>a:focus {
+        color: rgb(255, 123, 57);
+        background-color: rgb(234, 254, 83);
+    }
+
+    /* nav>ul>li:last-child {
+border-right: none;
+} */
+
+
+
+    section>div>ul {
+        /* height: 200px; */
+        /* padding-top: 5px;
+margin-top: 50px; */
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    /* section>div>ul>li>ul {
+padding: 0;
+} */
+
+    /* section>div>ul>li {
+margin-left: 30px;
+} */
+
+    section>div>h3 {
+        color: rgb(254, 123, 0);
+        padding: 10px;
+        margin: 0;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-left: 10px solid rgb(255, 100, 33);
+        background-color: rgb(161, 255, 209);
+    }
+
+    footer {
+        height: 70px;
+        background-color: rgb(255, 231, 122);
+        /* padding-top: 25px; */
+    }
+
+    footer>p {
+        text-align: center;
+        font-size: 16px;
+        /* margin: 10px; */
+        /* padding-top: 10px; */
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    footer>a {
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        /* padding-top: 50px; */
+        background-color: orange;
+        border: 1px solid rgb(255, 106, 0);
+        border-radius: 10px;
+        width: 100px;
+        /* box-sizing: border-box; */
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    footer>a:focus {
+        color: rgb(253, 34, 34);
+    }
+
+
+
+    /* 電腦版 */
+    @media screen and (min-width:400px) {
+
+        .container {
+            width: 100% margin: 0 auto;
+        }
+
+        header {
+            height: 250px;
+            background-image: url("images/naruto.jpg");
+            /* background-size: 1140px 300px; */
+        }
+
+        header>h1 {
+            color: rgb(255, 106, 0);
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav {
+            height: 50px;
+            background-color: rgb(87, 26, 0);
+        }
+
+        .clearfix::after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        .Left {
+            width: 30%;
+            float: left;
+        }
+
+        .Right {
+            width: 70%;
+            float: left;
+        }
+
+        nav>ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav>ul>li {
+            width: 25%;
+            border-right: 3px solid rgb(255, 255, 255);
+            box-sizing: border-box;
+            float: left;
+        }
+
+        nav>ul>li>a {
+            color: rgb(255, 241, 85);
+            width: 100%;
+            line-height: 50px;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav>ul>li>a:hover {
+            color: rgb(255, 123, 57);
+            background-color: rgb(234, 254, 83);
+        }
+
+        nav>ul>li:last-child {
+            border-right: none;
+        }
+
+        section>div {
+            height: 300px;
+            background-color: rgb(96, 248, 165);
+            margin-bottom: 10px;
+        }
+
+        section>div>ul {
+            height: 200px;
+            padding-top: 5px;
+            margin-top: 50px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+
+
+        section>div>h3 {
+            color: rgb(254, 123, 0);
+            padding: 10px;
+            margin: 0;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-left: 10px solid rgb(255, 100, 33);
+        }
+
+        footer {
+            height: 150px;
+            background-color: rgb(255, 231, 122);
+            padding-top: 25px;
+        }
+
+        footer>p {
+            text-align: center;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        footer>a {
+            width: 150px;
+            color: blue;
+            /* text-decoration: none; */
+            text-align: center;
+            display: block;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* footer>a:hover {
+            color: rgb(253, 34, 34); */
+        /* } */
+    }
+</style>
+
+<body>
+    <header class="container">
+        <h1 id="top">火影忍者：鳴人的四種形態</h1>
+    </header>
+    <nav class="container">
+        <ul>
+            <li><a href="#section1">九尾查克拉形態</a></li>
+            <li><a href="#section2">九尾暴走形態</a></li>
+            <li><a href="#section3">螺旋丸形態</a></li>
+            <li><a href="#section4">仙術九尾形態</a></li>
+        </ul>
+    </nav>
+    <section class="container clearfix">
+        <div class="Left">
+            <h3 id="section1">九尾查克拉形態</h3>
+            <img src="images/first.jpg" alt="" width="300px" height="200ox">
+        </div>
+        <div class="Right">
+            <ul>
+                <li>
+                    鳴人的第一種形態，九尾查克拉形態。
+                </li>
+                <li>
+                    這個形態的鳴人可以使用部分九尾查克拉進行戰鬥，但是無法操控九尾，尋常忍者會被秒殺，實力接近上忍，但是遠不如卡卡西。
+                </li>
+            </ul>
+        </div>
+        <div class="Left">
+            <h3 id="section2">九尾暴走形態</h3>
+            <img src="images/second.jpg" alt="" width="300px" height="200ox">
+        </div>
+        <div class="Right">
+            <ul>
+                <li>
+                    鳴人的第二種形態，九尾暴走形態。此時的鳴人被九尾控制了心智，身體被九尾狂暴的查克拉操控，變成了一個野獸。
+                </li>
+                <li>
+                    暴走形態使用的查克拉極多，會對身體造成很大的負擔，只有仙術可以限制此時的鳴人。
+
+                </li>
+            </ul>
+        </div>
+        <div class="Left">
+            <h3 id="section3">螺旋丸形態</h3>
+            <img src="images/third.jpg" alt="" width="300px" height="200ox">
+        </div>
+        <div class="Right">
+            <ul>
+                <li>
+                    鳴人的第三種形態，螺旋丸形態。鳴人在綱手和自來也的指導下學會了螺旋丸，並且更進一步的學會了螺旋手裏劍。
+                </li>
+                <li>
+                    只會螺旋丸，鳴人的實力十分弱小，連綱手的一根汗毛都不能碰到，但是螺旋手裏劍卻可以讓鳴人擊敗佩恩。
+                </li>
+            </ul>
+        </div>
+        <div class="Left">
+            <h3 id="section4">仙術九尾形態</h3>
+            <img src="images/forth.jpg" alt="" width="300px" height="200ox">
+        </div>
+        <div class="Right">
+            <ul>
+                <li>
+                    鳴人的第四種形態，仙術九尾形態。在妙木山修行了仙術之後，鳴人實現了九尾查克拉與仙術的結合，實力飆升。
+                </li>
+                <li>
+                    此時的鳴人可以與宇智波斑這樣傳說中的人戰鬥，實力為超影級，接近四代火影。
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="container">
+        <p>
+            黃之均2022-06-12
+        </P>
+        <a href="#">BACK TO HOMEPAGE</a>
+    </footer>
+</body>
+
+</html>
